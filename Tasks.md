@@ -2,10 +2,10 @@ Insure Landing Page - Tasks
 
 - Progress
 
-  - (In progress) Setup
-  - (Upcoming) Develop site
-    - (Upcoming) Navbar
-    - (Upcoming) Header section w/ text & image
+  - (Done) Setup
+  - (In progress) Develop site
+    - (Done) Navbar
+    - (In progress) Header section w/ text & image
     - (Upcoming) Body section
     - (Upcoming) Footer
   - (Upcoming) Wrap up
@@ -13,6 +13,7 @@ Insure Landing Page - Tasks
     - (Upcoming) Github pages
 
 - Setup
+
   - Create-react-app using npm. Delete unecessesary files.
   - Bring in project files.
   - Install dependencies
@@ -24,5 +25,10 @@ Insure Landing Page - Tasks
   - Create main component folders and files, create basic component for each.
     - Navbar
     - Main body
-  - Add GlobalStyles to index.js to pass basic styling.
+  - Add GlobalStyles to App.js to pass basic styling.
     - Pass margin/padding 0px along with color variables.
+
+- Develop site
+  - Add color and font variables to GlobalStyles.
+  - Navbar
+    - Develope and style.
