@@ -31,4 +31,4 @@ Insure Landing Page - Tasks
 - Develop site
   - Add color and font variables to GlobalStyles.
   - Navbar
-    - Develope and style.
+  - Body

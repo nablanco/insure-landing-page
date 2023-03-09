@@ -38,6 +38,10 @@ const SmallButton = styled.div`
   text-align: center;
   letter-spacing: 1.5px;
   cursor: pointer;
+
+  :hover {
+    color: #2c2830;
+  }
 `;
 const LargeButton = styled.div`
   width: 146px;
@@ -55,6 +59,12 @@ const LargeButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  :hover {
+    color: #ffffff;
+    background-color: #2c2830;
+  }
 `;
 const Navbar = () => {
   return (
