@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import logoImage from "../../assets/logo.svg";
+import openMenuImage from "../../assets/icon-hamburger.svg";
+import closeMenuImage from "../../assets/icon-close.svg";
 
 const StyledNavbar = styled.div`
   width: 100%;
@@ -9,17 +11,26 @@ const StyledNavbar = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const RightContainer = styled.div`
+const LeftContainer = styled.div`
   margin-left: 168px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 750px) {
+    margin-left: 24px;
+  }
 `;
 const Logo = styled.img``;
-const LeftContainer = styled.div`
+const RightContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 168px;
+
+  @media screen and (max-width: 750px) {
+    margin-right: 24px;
+  }
 `;
 const SmallButtonContainer = styled.div`
   width: 268px;
@@ -27,6 +38,10 @@ const SmallButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 const SmallButton = styled.div`
   color: #837d88;
@@ -46,7 +61,6 @@ const SmallButton = styled.div`
 const LargeButton = styled.div`
   width: 146px;
   height: 40px;
-  margin-right: 168px;
   color: #2c2830;
   border: 1.5px solid #2c2830;
   font-family: "Karla";
@@ -65,21 +79,40 @@ const LargeButton = styled.div`
     color: #ffffff;
     background-color: #2c2830;
   }
+
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 `;
-const Navbar = () => {
+const SideBarButton = styled.div`
+  display: none;
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    cursor: pointer;
+  }
+`;
+const SideBarButtonImage = styled.img``;
+
+const Navbar = ({ showSideBar, handleSidebar }) => {
   return (
     <StyledNavbar>
-      <RightContainer>
-        <Logo src={logoImage} />
-      </RightContainer>
       <LeftContainer>
+        <Logo src={logoImage} />
+      </LeftContainer>
+      <RightContainer>
         <SmallButtonContainer>
           <SmallButton>HOW WE WORK</SmallButton>
           <SmallButton>BLOG</SmallButton>
           <SmallButton>ACCOUNT</SmallButton>
         </SmallButtonContainer>
         <LargeButton>VIEW PLANS</LargeButton>
-      </LeftContainer>
+        <SideBarButton onClick={handleSidebar}>
+          <SideBarButtonImage
+            src={showSideBar ? closeMenuImage : openMenuImage}
+          />
+        </SideBarButton>
+      </RightContainer>
     </StyledNavbar>
   );
 };

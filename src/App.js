@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
 import Navbar from "./components/navbar/navbar";
-import Header from "./components/body/header";
-import Body from "./components/body/body";
-import Footer from "./components/body/footer";
+import SideBar from "./components/navbar/sidebar";
+import ContentContainer from "./components/content/contentcontainer";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -21,14 +20,19 @@ const GlobalStyle = createGlobalStyle`
 const StyledApp = styled.div``;
 
 const App = () => {
+  const [showSideBar, setShowSideBar] = useState(false);
+
+  const handleSidebar = () => {
+    setShowSideBar(showSideBar ? false : true);
+  };
+
   return (
     <>
       <GlobalStyle />
       <StyledApp>
-        <Navbar />
-        <Header />
-        <Body />
-        <Footer />
+        <Navbar showSideBar={showSideBar} handleSidebar={handleSidebar} />
+        <SideBar showSideBar={showSideBar} />
+        <ContentContainer showSideBar={showSideBar} />
       </StyledApp>
     </>
   );
