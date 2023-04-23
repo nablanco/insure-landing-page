@@ -8,7 +8,7 @@ const StyledSideBar = styled.div`
     display: ${({ showSideBar }) => (showSideBar ? "flex" : "none")};
     position: absolute;
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100vh - 140px);
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
