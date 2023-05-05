@@ -26,12 +26,23 @@ const TextContainer = styled.div`
   margin-right: 30px;
   display: flex;
   flex-flow: column nowrap;
+
+  @media screen and (max-width: 1200px) {
+    width: 327px;
+    margin-top: 90px;
+    margin-right: 0px;
+    align-items: center;
+  }
 `;
 const DividerLine = styled.div`
   width: 150px;
   height: 0px;
   margin-bottom: 63px;
   border: 1px solid #ffffff;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 const Title = styled.div`
   width: 520px;
@@ -42,6 +53,13 @@ const Title = styled.div`
   font-size: 72px;
   line-height: 64px;
   letter-spacing: -1px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.666667px;
+  }
 `;
 const Body = styled.div`
   margin-bottom: 24px;
@@ -84,6 +102,11 @@ const MobileImage = styled.img`
 
   @media screen and (max-width: 1200px) {
     display: block;
+  }
+
+  @media screen and (max-width: 425px) {
+    display: block;
+    width: 100%;
   }
 `;
 
