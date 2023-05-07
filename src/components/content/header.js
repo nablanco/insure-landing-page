@@ -79,12 +79,18 @@ const PlanButton = styled.div`
   line-height: 15px;
   text-align: center;
   letter-spacing: 1.5px;
-  color: #2c2830;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #2d2641;
+  border: 1px solid #ffffff;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  :hover {
+    color: #2d2641;
+    background-color: #ffffff;
+  }
 `;
 const ImageContainer = styled.div`
   margin-top: 105px;
@@ -115,7 +121,7 @@ const Header = () => {
     <StyledHeader>
       <TextContainer>
         <DividerLine />
-        <Title>Humanizing your insurance</Title>
+        <Title>Humanizing your insurance.</Title>
         <Body>
           Get your life insurance coverage easier and faster. We blend our
           expertise and technology to help you find the plan that’s right for
