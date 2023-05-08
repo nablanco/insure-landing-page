@@ -1,4 +1,4 @@
-# Insure landing page solution
+# Insure landing page
 
 ## Table of contents
 
@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Insure Landing Page](https://nablanco.github.io/insure-landing-page/)
 
 ## My process
 
