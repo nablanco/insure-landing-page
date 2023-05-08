@@ -88,6 +88,12 @@ const LowerContentContainer = styled.div`
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    height: 344px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+  }
 `;
 const LowerContentText = styled.div`
   width: 475px;
@@ -100,13 +106,25 @@ const LowerContentText = styled.div`
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -0.777778px;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 0px;
+    margin-top: 72px;
+    width: 279px;
+    height: 120px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.555556px;
+  }
 `;
 const LowerContentButton = styled.div`
   width: 160px;
   height: 40px;
   margin-right: 80px;
-  color: #2c2830;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: none;
+  border: 1px solid #ffffff;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -118,6 +136,16 @@ const LowerContentButton = styled.div`
   line-height: 15px;
   text-align: center;
   letter-spacing: 1.5px;
+
+  :hover {
+    color: #2c2830;
+    background-color: #ffffff;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-right: 0px;
+    margin-top: 40px;
+  }
 `;
 const Body = () => {
   return (
