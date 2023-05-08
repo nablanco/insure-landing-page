@@ -3,12 +3,12 @@ Insure Landing Page - Tasks
 - Progress
 
   - (Done) Setup
-  - (In progress) Develop site
+  - (Done) Develop site
     - (Done) Navbar
-    - (In progress) Header section w/ text & image
-    - (Upcoming) Body section
-    - (Upcoming) Footer
-  - (Upcoming) Wrap up
+    - (Done) Header section w/ text & image
+    - (Done) Body section
+    - (Done) Footer
+  - (Done) Wrap up
     - (Upcoming) Code review
     - (Upcoming) Github pages
 
