@@ -80,7 +80,45 @@ const ItemText = styled.div`
   font-size: 16px;
   line-height: 26px;
 `;
-
+const LowerContentContainer = styled.div`
+  height: 250px;
+  margin-top: 158px;
+  background-color: #2d2641;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+`;
+const LowerContentText = styled.div`
+  width: 475px;
+  height: 112px;
+  color: #ffffff;
+  margin-left: 81px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.777778px;
+`;
+const LowerContentButton = styled.div`
+  width: 160px;
+  height: 40px;
+  margin-right: 80px;
+  color: #2c2830;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1.5px;
+`;
 const Body = () => {
   return (
     <StyledBody>
@@ -97,6 +135,10 @@ const Body = () => {
           );
         })}
       </ContentListContainer>
+      <LowerContentContainer>
+        <LowerContentText>Find out more about how we work</LowerContentText>
+        <LowerContentButton>HOW WE WORK</LowerContentButton>
+      </LowerContentContainer>
     </StyledBody>
   );
 };
